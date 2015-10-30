@@ -66,4 +66,4 @@ Serve either dist/conjugate.js or dist/conjugate.min.js however you serve javasc
 
 ## Contributing
 
-Please see [the contribution guidelines](contributing.md).
+Please see [the contribution guidelines](CONTRIBUTING.md).

@@ -53,14 +53,23 @@
     }
   ];
 
-  var conjugate = function(pronoun, verb) {
+  var conjugate = function(pronoun, verb, append) {
+    if (/^to /.test(verb)) {
+      verb = verb.replace('to ', '');
+    }
+
+    var result;
     for (var i = 0; i < patterns.length; i++) {
       if (patterns[i].pattern.test(verb)) {
-        return patterns[i].process(pronoun, verb);
+        result = patterns[i].process(pronoun, verb);
+        break;
       }
     }
+
+    return append ? pronoun + ' ' + result : result;
   };
 
+  /* istanbul ignore else */
   if (isNode) {
     module.exports = conjugate;
   } else {

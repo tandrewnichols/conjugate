@@ -311,3 +311,9 @@ describe 'conjugate', ->
 
       context 'they', ->
         Then -> @subject('they', 'may').should.eql 'may'
+
+  context 'strips "to"', ->
+    Then -> @subject('I', 'to truncate').should.eql 'truncate'
+
+  context 'append is true', ->
+    Then -> @subject('he', 'to smear', true).should.eql 'he smears'

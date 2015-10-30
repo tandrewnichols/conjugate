@@ -61,7 +61,6 @@
     }
   };
 
-  /* istanbul ignore else */
   if (isNode) {
     module.exports = conjugate;
   } else {

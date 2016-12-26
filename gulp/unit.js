@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var config = require('./config');
-var mocha = require('gulp-mocha');
+const gulp = require('gulp');
+const config = require('./config');
+const mocha = require('gulp-mocha');
 
-gulp.task('unit', function() {
+gulp.task('unit', () => {
   return gulp.src(config.tests, { read: false })
     .pipe(mocha({
       reporter: 'dot',

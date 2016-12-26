@@ -1,13 +1,13 @@
-var gulp = require('gulp');
-var config = require('./config');
-var jshint = require('gulp-jshint');
+const gulp = require('gulp');
+const config = require('./config');
+const jshint = require('gulp-jshint');
 
-gulp.task('lint', function() {
+gulp.task('lint', () => {
   return gulp.src(config.lib)
     .pipe(jshint({
+      esversion: 6,
       lookup: false,
       eqeqeq: true,
-      es3: true,
       indent: 2,
       newcap: true,
       quotmark: 'single',

@@ -1,12 +1,12 @@
-var gulp = require('gulp');
-var clean = require('gulp-clean');
+const gulp = require('gulp');
+const clean = require('gulp-clean');
 
-gulp.task('clean:coverage', function() {
+gulp.task('clean:coverage', () => {
   return gulp.src('./coverage', { read: false })
     .pipe(clean());
 });
 
-gulp.task('clean:dist', function() {
+gulp.task('clean:dist',() => {
   return gulp.src('./dist', { read: false })
     .pipe(clean());
 });

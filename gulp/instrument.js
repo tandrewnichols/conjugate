@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var istanbul = require('gulp-istanbul');
-var config = require('./config');
+const gulp = require('gulp');
+const istanbul = require('gulp-istanbul');
+const config = require('./config');
 
-gulp.task('instrument', function() {
+gulp.task('instrument',() => {
   gulp.src(config.lib)
     .pipe(istanbul({
       includeUntested: true

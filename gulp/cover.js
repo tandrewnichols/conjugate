@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var config = require('./config');
-var mocha = require('gulp-mocha');
-var istanbul = require('gulp-istanbul');
+const gulp = require('gulp');
+const config = require('./config');
+const mocha = require('gulp-mocha');
+const istanbul = require('gulp-istanbul');
 
-gulp.task('cover', ['clean:coverage', 'instrument'], function() {
+gulp.task('cover', ['clean:coverage', 'instrument'],() => {
   return gulp.src(config.tests, { read: false })
     .pipe(mocha({
       reporter: 'dot',

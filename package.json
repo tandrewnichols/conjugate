@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "lib/conjugate.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "travis": "gulp travis"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "file-manifest": "^2.0.4",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.1",
+    "gulp-cli": "^1.2.2",
     "gulp-codeclimate-reporter": "^1.1.0",
     "gulp-copy": "1.0.0",
     "gulp-istanbul": "^1.1.1",

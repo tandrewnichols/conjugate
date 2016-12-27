@@ -1,4 +1,23 @@
-languages:
-  JavaScript: true
+engines:
+  eslint:
+    enabled: true
+    channel: "eslint-3"
+    config:
+      config: '.eslint.json'
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript
+ratings:
+   paths:
+    - "lib/**.js"
 exclude_paths:
   - "dist/**.js"
+  - "gulp/**.js"
+  - "test/**.js"
+  - "**.json"
+  - "**.md"
+  - "*.js"
+  - "**.coffee"
+  - "LICENSE"

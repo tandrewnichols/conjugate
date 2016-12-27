@@ -1,7 +1,7 @@
 {
   "name": "conjugate",
   "description": "Conjugate verbs correctly based on a pronoun",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/conjugate.js",
   "scripts": {
     "test": "gulp",

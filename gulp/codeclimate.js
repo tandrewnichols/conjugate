@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const cp = require('child_process');
 const codeclimate = require('gulp-codeclimate-reporter');
 
-gulp.task('codeclimate',() => {
+gulp.task('codeclimate', () => {
   if (process.version.indexOf('v4') > -1) {
     gulp.src('coverage/lcov.info', { read: false })
       .pipe(codeclimate({

@@ -6,7 +6,7 @@ gulp.task('clean:coverage', () => {
     .pipe(clean());
 });
 
-gulp.task('clean:dist',() => {
+gulp.task('clean:dist', () => {
   return gulp.src('./dist', { read: false })
     .pipe(clean());
 });

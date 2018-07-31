@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/tandrewnichols/conjugate",
   "dependencies": {
-    "lodash": "^4.17.3"
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",

@@ -156,7 +156,7 @@ describe 'conjugate', ->
       context 'they', ->
         Then -> @subject('they', 'haj').should.eql 'haj'
       
-    context 'words ending in "y"', ->
+    context 'words ending in consonant + "y"', ->
       context 'I', ->
         Then -> @subject('I', 'spy').should.eql 'spy'
 
@@ -177,6 +177,28 @@ describe 'conjugate', ->
 
       context 'they', ->
         Then -> @subject('they', 'spy').should.eql 'spy'
+
+    context 'words ending in vowel + "y"', ->
+      context 'I', ->
+        Then -> @subject('I', 'buy').should.eql 'buy'
+
+      context 'you', ->
+        Then -> @subject('you', 'buy').should.eql 'buy'
+
+      context 'he', ->
+        Then -> @subject('he', 'buy').should.eql 'buys'
+
+      context 'she', ->
+        Then -> @subject('she', 'buy').should.eql 'buys'
+
+      context 'it', ->
+        Then -> @subject('it', 'buy').should.eql 'buys'
+
+      context 'we', ->
+        Then -> @subject('we', 'buy').should.eql 'buy'
+
+      context 'they', ->
+        Then -> @subject('they', 'buy').should.eql 'buy'
 
     context 'have', ->
       context 'I', ->
